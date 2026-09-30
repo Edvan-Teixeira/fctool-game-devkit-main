@@ -1,0 +1,89 @@
+{
+  "fctoolGame": "1.0",
+  "id": "meu-jogo",
+  "name": "Meu Jogo",
+  "version": "1.0.0",
+  "entrypoint": "index.html",
+  "metadata": {
+    "description": "Descrição breve do jogo",
+    "author": "Nome do desenvolvedor",
+    "language": "pt-BR",
+    "suggestedAreas": [
+      "Ciências da Natureza"
+    ],
+    "suggestedSubjects": [
+      "Física"
+    ],
+    "suggestedTopics": [
+      "Mecânica"
+    ],
+    "suggestedEducationLevels": [
+      "Ensino Médio"
+    ],
+    "keywords": [
+      "física",
+      "jogo educacional"
+    ]
+  },
+  "capabilities": {
+    "score": true,
+    "attempts": true,
+    "completion": true,
+    "customEvents": true
+  },
+  "configuration": {
+    "initialLevel": {
+      "type": "select",
+      "label": "Fase inicial",
+      "options": [
+        {
+          "value": "level-1",
+          "label": "Fase 1"
+        },
+        {
+          "value": "level-2",
+          "label": "Fase 2"
+        },
+        {
+          "value": "level-3",
+          "label": "Fase 3"
+        }
+      ],
+      "default": "level-1",
+      "required": true,
+      "help": "Define a fase em que o estudante iniciará a sessão."
+    },
+    "difficulty": {
+      "type": "select",
+      "label": "Dificuldade",
+      "options": [
+        {
+          "value": "easy",
+          "label": "Fácil"
+        },
+        {
+          "value": "medium",
+          "label": "Média"
+        },
+        {
+          "value": "hard",
+          "label": "Difícil"
+        }
+      ],
+      "default": "medium"
+    },
+    "sound": {
+      "type": "boolean",
+      "label": "Som",
+      "default": true
+    }
+  },
+  "responsive": {
+    "touch": true,
+    "orientations": [
+      "portrait",
+      "landscape"
+    ],
+    "preferredOrientation": "any"
+  }
+}
